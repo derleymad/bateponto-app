@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">bateponto</string>
+    <string name="tv_static_title">Para você, bolsista <b>preguiçoso!</b></string>
+    <string name="tv_static_desc">Esse aplicativo irá gerar apenas os horários com um intervalo definido de no máximo <b>10 minutos</b> de entrada e de saída.</string>
+    <string name="tv_static_calc_title">Quantos dias você quer gerar horários?</string>
+</resources>
