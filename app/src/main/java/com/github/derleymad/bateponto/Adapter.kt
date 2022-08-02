@@ -32,9 +32,9 @@ class Adapter(
             val total = itemView.findViewById<TextView>(R.id.tv_total)
 
             dia.text = itemCurrent.dia.toString()
-            entrada.text = itemCurrent.entrada.toString()
-            saida.text = itemCurrent.saida.toString()
-            total.text = itemCurrent.total.toString()
+            entrada.text = itemCurrent.entrada
+            saida.text = itemCurrent.saida
+            total.text = itemCurrent.total
 
         }
     }

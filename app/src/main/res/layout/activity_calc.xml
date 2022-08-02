@@ -38,6 +38,7 @@
             android:id="@+id/edit_text"
             android:layout_width="match_parent"
             android:inputType="number"
+            android:maxLength="2"
             android:layout_height="match_parent"
             android:hint="Quantos dias?" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -57,15 +58,16 @@
         android:id="@+id/rv_calc"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        tools:listitem="@layout/calc_item"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp"
+        android:paddingStart="24dp"
+        app:layout_constraintBottom_toTopOf="@id/total_of_all"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:listitem="@layout/calc_item" />
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/sw_tarde"
@@ -77,4 +79,15 @@
         app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="@+id/tv_static_calc_title"
         app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/total_of_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Total de tudo: "
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
