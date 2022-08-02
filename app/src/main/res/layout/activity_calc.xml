@@ -81,6 +81,7 @@
         app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/total_of_all"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

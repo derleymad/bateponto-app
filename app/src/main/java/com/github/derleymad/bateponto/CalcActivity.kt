@@ -2,6 +2,7 @@ package com.github.derleymad.bateponto
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.derleymad.bateponto.databinding.ActivityCalcBinding
@@ -67,6 +68,7 @@ class CalcActivity : AppCompatActivity() {
             val totalOfAllMinutos = (totalOfAll%60).toString().padStart(2,'0')
 
             binding.rvCalc.adapter?.notifyDataSetChanged()
+            binding.totalOfAll.visibility = View.VISIBLE
             binding.totalOfAll.text = getString(R.string.total_of_all,"$totalOfAllHoras:$totalOfAllMinutos")
 
         }else{
@@ -96,6 +98,7 @@ class CalcActivity : AppCompatActivity() {
             val totalOfAllMinutos = (totalOfAll%60).toString().padStart(2,'0')
 
             binding.rvCalc.adapter?.notifyDataSetChanged()
+            binding.totalOfAll.visibility = View.VISIBLE
             binding.totalOfAll.text = getString(R.string.total_of_all,"$totalOfAllHoras:$totalOfAllMinutos")
         }
     }
